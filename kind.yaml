@@ -17,3 +17,11 @@ nodes:
         protocol: TCP
       - containerPort: 31444 # Kargo dashboard
         hostPort: 31444
+      - containerPort: 31443 # Argo CD dashboard
+        hostPort: 31443
+      - containerPort: 30081 # test application instance
+        hostPort: 30081
+      - containerPort: 30082 # UAT application instance
+        hostPort: 30082
+      - containerPort: 30083 # prod application instance
+        hostPort: 30083
